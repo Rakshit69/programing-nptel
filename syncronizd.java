@@ -29,7 +29,7 @@ class transactiondeposit implements Runnable {
         this.amount = amount;
         this.x = x;
          new Thread(this).start();
-    }h
+    }
 
     public void run() {
         x.deposit(amount);

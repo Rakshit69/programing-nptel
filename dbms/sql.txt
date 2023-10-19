@@ -1,0 +1,12 @@
+create table mybase(
+    ->  roll Integer primary key,
+    -> name Varchar(30),
+    ->  marks Integer not null,
+    ->  grade Varchar(2));
+insert into mybase values(4,'anand',40,'b');
+insert into mybase values(6,'amit',70,'EX');
+select * from mybase order by marks;
+select * from mybase order by marks desc;
+update mybase set name ='rakshi' where name'anand';
+ delete  from mybase where marks<=41;
+select * from mybase where marks>80;// where name like 'rak' it is prefix
